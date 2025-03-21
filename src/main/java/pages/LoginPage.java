@@ -7,7 +7,6 @@ import config.ConfigReader;
 public class LoginPage {
     private WebDriver driver;
     private ConfigReader config = new ConfigReader();
-
     private By usernameField = By.id("ctl00_phBody_SignIn_txtEmail");
     private By passwordField = By.id("ctl00_phBody_SignIn_txtPassword");
     private By loginButton = By.id("ctl00_phBody_SignIn_btnLogin");

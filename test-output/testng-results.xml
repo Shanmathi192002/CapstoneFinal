@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="6" failed="0" skipped="0">
+<testng-results total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2025-03-17T11:06:00Z" name="All Test Runners" finished-at="2025-03-17T11:06:44Z" duration-ms="43907">
-    <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CartRunner@3a93b025]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.HomeRunner@35cabb2a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@478190fc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProductRunner@6572421]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.SearchRunner@79e2c065]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
-    </groups>
-    <test started-at="2025-03-17T11:06:00Z" name="Run all Test" finished-at="2025-03-17T11:06:44Z" duration-ms="43907">
-      <class name="runners.ProductRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ProductRunner@6572421]" started-at="2025-03-17T16:36:27Z" name="setUpClass" finished-at="2025-03-17T16:36:27Z" duration-ms="22" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2eed37f4]]>
-=======
-  <suite started-at="2025-03-18T04:04:09Z" name="All Test Runners" finished-at="2025-03-18T04:06:43Z" duration-ms="154728">
+  <suite started-at="2025-03-21T04:10:30Z" name="All Test Runners" finished-at="2025-03-21T04:11:54Z" duration-ms="83779">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CartRunner@1189dd52]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
@@ -31,25 +12,20 @@
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.SearchRunner@3a93b025]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-18T04:04:09Z" name="Run all Test" finished-at="2025-03-18T04:06:43Z" duration-ms="154728">
+    <test started-at="2025-03-21T04:10:30Z" name="Run all Test" finished-at="2025-03-21T04:11:54Z" duration-ms="83779">
       <class name="runners.ProductRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-18T09:34:55Z" name="setUpClass" finished-at="2025-03-18T09:34:55Z" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-21T09:41:10Z" name="setUpClass" finished-at="2025-03-21T09:41:10Z" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@57c00115]]>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+                <![CDATA[org.testng.TestRunner@60d6fdd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProductRunner@6572421]" started-at="2025-03-17T16:36:27Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:36Z" duration-ms="8958" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-18T09:34:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:36:35Z" duration-ms="99464" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-21T09:41:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:41:46Z" duration-ms="36085" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -62,43 +38,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'In Stock')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '18ae989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\tgsha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51219}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51219/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7e4ce504f856d2a929e494ba73c7d18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'In Stock')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.29.0', revision: '18ae989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\tgsha\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51219}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51219/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7e4ce504f856d2a929e494ba73c7d18
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductPage.clickAvailability(ProductPage.java:29)
+	at stepDefinition.ProductStep.user_clicks_on_availability(ProductStep.java:37)
+	at ✽.User clicks on availability(file:///C:/Users/tgsha/Java_Workspace/Bookswagon_Automation/src/test/resources/feature/Product.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ProductRunner@6572421]" started-at="2025-03-17T16:36:36Z" name="tearDownClass" finished-at="2025-03-17T16:36:36Z" duration-ms="24" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-18T09:36:35Z" name="tearDownClass" finished-at="2025-03-18T09:36:35Z" duration-ms="22" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.ProductRunner@35cabb2a]" started-at="2025-03-21T09:41:46Z" name="tearDownClass" finished-at="2025-03-21T09:41:46Z" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.ProductRunner -->
       <class name="runners.HomeRunner">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.HomeRunner@35cabb2a]" started-at="2025-03-17T16:36:12Z" name="setUpClass" finished-at="2025-03-17T16:36:12Z" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-21T09:40:54Z" name="setUpClass" finished-at="2025-03-21T09:40:54Z" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2eed37f4]]>
-=======
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-18T09:34:37Z" name="setUpClass" finished-at="2025-03-18T09:34:37Z" duration-ms="28" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@57c00115]]>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+                <![CDATA[org.testng.TestRunner@60d6fdd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.HomeRunner@35cabb2a]" started-at="2025-03-17T16:36:12Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:17Z" duration-ms="5127" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-18T09:34:37Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:34:43Z" duration-ms="5219" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-21T09:40:54Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:41:00Z" duration-ms="6018" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,40 +98,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.HomeRunner@35cabb2a]" started-at="2025-03-17T16:36:17Z" name="tearDownClass" finished-at="2025-03-17T16:36:17Z" duration-ms="21" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-18T09:34:43Z" name="tearDownClass" finished-at="2025-03-18T09:34:43Z" duration-ms="24" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.HomeRunner@2a798d51]" started-at="2025-03-21T09:41:00Z" name="tearDownClass" finished-at="2025-03-21T09:41:00Z" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.HomeRunner -->
       <class name="runners.CartRunner">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CartRunner@3a93b025]" started-at="2025-03-17T16:36:36Z" name="setUpClass" finished-at="2025-03-17T16:36:36Z" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-21T09:41:46Z" name="setUpClass" finished-at="2025-03-21T09:41:46Z" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2eed37f4]]>
-=======
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-18T09:36:35Z" name="setUpClass" finished-at="2025-03-18T09:36:35Z" duration-ms="22" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@57c00115]]>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+                <![CDATA[org.testng.TestRunner@60d6fdd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CartRunner@3a93b025]" started-at="2025-03-17T16:36:36Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:44Z" duration-ms="7553" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-18T09:36:35Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:36:43Z" duration-ms="8330" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-21T09:41:46Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:41:54Z" duration-ms="7597" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,40 +131,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CartRunner@3a93b025]" started-at="2025-03-17T16:36:44Z" name="tearDownClass" finished-at="2025-03-17T16:36:44Z" duration-ms="20" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-18T09:36:43Z" name="tearDownClass" finished-at="2025-03-18T09:36:43Z" duration-ms="21" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.CartRunner@1189dd52]" started-at="2025-03-21T09:41:54Z" name="tearDownClass" finished-at="2025-03-21T09:41:54Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.CartRunner -->
       <class name="runners.SearchRunner">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.SearchRunner@79e2c065]" started-at="2025-03-17T16:36:17Z" name="setUpClass" finished-at="2025-03-17T16:36:17Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-21T09:41:00Z" name="setUpClass" finished-at="2025-03-21T09:41:00Z" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2eed37f4]]>
-=======
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-18T09:34:43Z" name="setUpClass" finished-at="2025-03-18T09:34:43Z" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@57c00115]]>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+                <![CDATA[org.testng.TestRunner@60d6fdd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.SearchRunner@79e2c065]" started-at="2025-03-17T16:36:17Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:27Z" duration-ms="10498" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-18T09:34:43Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:34:55Z" duration-ms="12644" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-21T09:41:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:41:10Z" duration-ms="10166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,40 +164,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.SearchRunner@79e2c065]" started-at="2025-03-17T16:36:27Z" name="tearDownClass" finished-at="2025-03-17T16:36:27Z" duration-ms="24" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-18T09:34:55Z" name="tearDownClass" finished-at="2025-03-18T09:34:55Z" duration-ms="25" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.SearchRunner@3a93b025]" started-at="2025-03-21T09:41:10Z" name="tearDownClass" finished-at="2025-03-21T09:41:10Z" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.SearchRunner -->
       <class name="runners.LoginRunner">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.LoginRunner@478190fc]" started-at="2025-03-17T16:36:00Z" name="setUpClass" finished-at="2025-03-17T16:36:01Z" duration-ms="1013" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-21T09:40:30Z" name="setUpClass" finished-at="2025-03-21T09:40:31Z" duration-ms="484" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2eed37f4]]>
-=======
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-18T09:34:09Z" name="setUpClass" finished-at="2025-03-18T09:34:10Z" duration-ms="930" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@57c00115]]>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+                <![CDATA[org.testng.TestRunner@60d6fdd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@478190fc]" started-at="2025-03-17T16:36:01Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:07Z" duration-ms="5699" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-18T09:34:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:34:23Z" duration-ms="13485" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-21T09:40:31Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:40:49Z" duration-ms="18852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,11 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@478190fc]" started-at="2025-03-17T16:36:07Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-17T16:36:12Z" duration-ms="4802" status="PASS">
-=======
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-18T09:34:23Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T09:34:37Z" duration-ms="14345" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-21T09:40:49Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-21T09:40:54Z" duration-ms="4365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -281,11 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.LoginRunner@478190fc]" started-at="2025-03-17T16:36:12Z" name="tearDownClass" finished-at="2025-03-17T16:36:12Z" duration-ms="43" status="PASS">
-=======
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-18T09:34:37Z" name="tearDownClass" finished-at="2025-03-18T09:34:37Z" duration-ms="78" status="PASS">
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.LoginRunner@7e07db1f]" started-at="2025-03-21T09:40:54Z" name="tearDownClass" finished-at="2025-03-21T09:40:54Z" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

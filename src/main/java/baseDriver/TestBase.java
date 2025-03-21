@@ -28,7 +28,6 @@ public class TestBase {
                 default:
                     throw new RuntimeException("Unsupported browser: " + browser);
             }
-
             driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(
                 Integer.parseInt(config.getProperty("implicit_wait"))
             ));

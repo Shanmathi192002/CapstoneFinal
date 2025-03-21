@@ -1,15 +1,15 @@
 package stepDefinition;
 
 import baseDriver.TestBase;
-import io.cucumber.java.en.*;
 import pages.ProductPage;
 import config.ConfigReader;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import pages.LoginPage;
 
 public class ProductStep {
     private LoginPage loginPage;
     private ProductPage productPage;
-
     private ConfigReader config;
 
     public ProductStep() {

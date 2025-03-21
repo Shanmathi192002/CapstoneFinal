@@ -12,4 +12,4 @@ Scenario: Add product to cart and wishlist
   And User adds the product to cart
   And User goes to cart
   And User adds product to wishlist
-  #Then Product should be added to wishlist successfully
+  

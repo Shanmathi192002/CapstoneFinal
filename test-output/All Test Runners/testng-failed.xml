@@ -3,19 +3,25 @@
 <suite name="Failed suite [All Test Runners]">
   <test name="Run all Test(failed)" preserve-order="true">
     <classes>
-      <class name="runners.ProductRunner">
+      <class name="runners.HomeRunner">
         <methods>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- runners.ProductRunner -->
+      </class> <!-- runners.HomeRunner -->
       <class name="runners.SearchRunner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- runners.SearchRunner -->
+      <class name="runners.ProductRunner">
         <methods>
           <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- runners.SearchRunner -->
+      </class> <!-- runners.ProductRunner -->
       <class name="runners.LoginRunner">
         <methods>
           <include name="tearDownClass"/>
@@ -28,12 +34,6 @@
           <include name="setUpClass"/>
         </methods>
       </class> <!-- runners.CartRunner -->
-      <class name="runners.HomeRunner">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- runners.HomeRunner -->
     </classes>
   </test> <!-- Run all Test(failed) -->
 </suite> <!-- Failed suite [All Test Runners] -->

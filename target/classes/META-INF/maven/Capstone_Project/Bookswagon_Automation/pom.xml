@@ -35,8 +35,6 @@
         	<artifactId>CucumberOrangeHRM</artifactId>
         	<version>0.0.1-SNAPSHOT</version>
         </dependency>
-<<<<<<< HEAD
-=======
 
     <dependency>
         <groupId>commons-io</groupId>
@@ -44,7 +42,6 @@
         <version>2.11.0</version>
     </dependency>
 
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)
   </dependencies>
 
     <build>
@@ -63,8 +60,4 @@
 
   
   
-<<<<<<< HEAD
 </project>
-=======
-</project>
->>>>>>> ef3c05e (Initial commit - Uploading Bookswagon Automation project)

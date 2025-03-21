@@ -1,6 +1,9 @@
 package pages;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -47,15 +50,13 @@ public class CartPage {
     public void clickBuyButton() {
         wait.until(ExpectedConditions.elementToBeClickable(buyButton)).click();
         
-        // Wait until the "Order Summary" heading appears on the next page
         By orderSummaryHeader = By.xpath("//h2[contains(text(),'Order Summary')]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(orderSummaryHeader));
 
-        // Take a screenshot after the new page is fully loaded
+       
         takeScreenshot("OrderConfirmation");
     }
 
-    // Method to take a screenshot
     public void takeScreenshot(String fileName) {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);

@@ -1,7 +1,6 @@
 package stepDefinition;
 
 import config.ConfigReader;
-
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +8,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-
 import pages.LoginPage;
 import baseDriver.TestBase;
 import io.cucumber.java.Before;
