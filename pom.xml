@@ -47,6 +47,16 @@
     <build>
     <plugins>
         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+        <!-- Add the cucumber-reporting plugin -->
+        <plugin>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
             <version>5.7.0</version>
@@ -58,16 +68,12 @@
                         <goal>generate</goal>
                     </goals>
                     <configuration>
-                        <!-- Include all JSON report paths -->
+                        <projectName>Bookswagon_Automation</projectName>
+                        <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
                         <jsonFiles>
-                            <param>target/cucumber/product.json</param>
-                            <param>target/cucumber/runner2.json</param>
-                            <param>target/cucumber/runner3.json</param>
-                            <param>target/cucumber/runner4.json</param>
-                            <param>target/cucumber/runner5.json</param>
+                            <param>${project.build.directory}/cucumber/login.json</param>
                         </jsonFiles>
-                        <!-- Output directory -->
-                        <outputDirectory>target/cucumber-html-reports</outputDirectory>
+                        <buildNumber>1</buildNumber>
                     </configuration>
                 </execution>
             </executions>
@@ -75,7 +81,5 @@
     </plugins>
 </build>
 
-
-  
   
 </project>
