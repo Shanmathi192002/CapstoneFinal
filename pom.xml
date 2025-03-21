@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>Capstone_Project</groupId>
     <artifactId>Bookswagon_Automation</artifactId>
@@ -25,18 +27,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Selenium dependencies -->
+        <!-- Selenium dependency -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.29.0</version>
-        </dependency>
-
-        <!-- Custom Dependency -->
-        <dependency>
-            <groupId>24379_Shanmathi</groupId>
-            <artifactId>CucumberOrangeHRM</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Commons IO for file operations -->
@@ -46,7 +41,14 @@
             <version>2.11.0</version>
         </dependency>
 
-        <!-- Cucumber reporting plugin (optional) -->
+        <!-- Custom project dependency -->
+        <dependency>
+            <groupId>24379_Shanmathi</groupId>
+            <artifactId>CucumberOrangeHRM</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Cucumber Reporting dependency -->
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
@@ -74,14 +76,17 @@
                 <version>5.7.0</version>
                 <executions>
                     <execution>
-                        <id>cucumber-report</id>
+                        <id>generate-cucumber-report</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>${project.artifactId}</projectName>
+                            <projectName>Bookswagon Automation</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                            <jsonFiles>
+                                <param>${project.build.directory}/cucumber-reports/cucumber.json</param>
+                            </jsonFiles>
                         </configuration>
                     </execution>
                 </executions>
