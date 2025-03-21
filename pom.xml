@@ -47,15 +47,6 @@
     <build>
     <plugins>
         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-        <plugin>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
             <version>5.7.0</version>
@@ -67,15 +58,16 @@
                         <goal>generate</goal>
                     </goals>
                     <configuration>
-                        <projectName>Bookswagon Automation</projectName>
-                        <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+                        <!-- Include all JSON report paths -->
                         <jsonFiles>
-                            <param>${project.build.directory}/cucumber/product.json</param>
-                            <param>${project.build.directory}/cucumber/user.json</param>
-                            <param>${project.build.directory}/cucumber/order.json</param>
-                            <param>${project.build.directory}/cucumber/cart.json</param>
-                            <param>${project.build.directory}/cucumber/payment.json</param>
+                            <param>target/cucumber/product.json</param>
+                            <param>target/cucumber/runner2.json</param>
+                            <param>target/cucumber/runner3.json</param>
+                            <param>target/cucumber/runner4.json</param>
+                            <param>target/cucumber/runner5.json</param>
                         </jsonFiles>
+                        <!-- Output directory -->
+                        <outputDirectory>target/cucumber-html-reports</outputDirectory>
                     </configuration>
                 </execution>
             </executions>
