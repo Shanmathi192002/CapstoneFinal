@@ -3,7 +3,7 @@
   <groupId>Capstone_Project</groupId>
   <artifactId>Bookswagon_Automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
   <dependencies>
     <!-- Cucumber dependencies -->
     <dependency>
@@ -16,7 +16,7 @@
       <artifactId>cucumber-testng</artifactId>
       <version>7.3.3</version>
     </dependency>
-    
+
     <!-- TestNG dependency -->
     <dependency>
       <groupId>org.testng</groupId>
@@ -25,19 +25,21 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Selenium dependencies -->
+    <!-- Selenium dependency -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.29.0</version>
-    </dependency>
-    
-    <dependency>
-      <groupId>24379_Shanmathi</groupId>
-      <artifactId>CucumberOrangeHRM</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>4.10.0</version> <!-- Updated version -->
     </dependency>
 
+    <!-- WebDriverManager for automated browser driver setup -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.4.0</version>
+    </dependency>
+
+    <!-- Apache Commons IO -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
@@ -53,7 +55,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <source>11</source>
+          <source>11</source> <!-- Use 17 if compatible -->
           <target>11</target>
         </configuration>
       </plugin>
@@ -62,7 +64,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.1.2</version> <!-- Updated stable version -->
         <configuration>
           <includes>
             <include>**/CartRunner.java</include>
@@ -72,6 +74,21 @@
             <include>**/SearchRunner.java</include>
           </includes>
         </configuration>
+      </plugin>
+
+      <!-- Cucumber Maven Plugin for reporting -->
+      <plugin>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-maven-plugin</artifactId>
+        <version>7.3.3</version>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>reporting</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
